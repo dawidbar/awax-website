@@ -1,0 +1,78 @@
+.navbar {
+  height: 100px;
+  margin-bottom: 0;
+  background-color: black;
+}
+
+.navbar .navbar-brand {
+  float: none;
+}
+
+.navbar .container-fluid {
+  margin-left: 253px;
+  margin-right: 220px;
+  padding: 0;
+}
+
+.navbar .nav li {
+  margin-top: 28px;
+}
+
+.navbar .nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.23px;
+  padding: 9px;
+}
+
+.jumbotron {
+  background-image: url(../images/jumbotron.png);
+  height: 752px;
+  background-size: cover;
+  background-position: center -100px;
+}
+
+.jumbotron .jumb {
+  text-align: center;
+  margin-top: 185px;
+}
+
+.jumbotron .jumb .welcome, .jumbotron .jumb .welcome2 {
+  font-family: "Montserrat";
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -1.2px;
+  line-height: 1;
+}
+
+.jumbotron .jumb .welcome2 {
+  color: #b88b58;
+}
+
+.jumbotron .jumb .call {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.3px;
+  line-height: 2.3;
+}
+
+.jumbotron .jumb .btnjumb {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 18px;
+  width: 194px;
+  margin-top: 32px;
+  height: 43px;
+  letter-spacing: -0.3px;
+  background-color: #b88b58;
+}
+/*# sourceMappingURL=style.css.map */

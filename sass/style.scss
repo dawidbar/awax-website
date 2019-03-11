@@ -1,0 +1,71 @@
+$white: #fff;
+.navbar {
+    height: 100px;
+    margin-bottom: 0;
+    background-color: black;
+    .navbar-brand {
+        float:none;
+    }
+    .container-fluid {
+        margin-left: 253px;
+        margin-right: 220px;
+        padding: 0;
+    }
+    .nav {
+        li {
+            margin-top: 28px;
+            a {
+                color: $white;
+                text-decoration: none;
+                font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.23px;
+            padding: 9px;
+            }
+        }
+    }
+}
+.jumbotron {
+    background-image:url(../images/jumbotron.png);
+    height: 752px;
+    background-size: cover;
+    background-position: center -100px;
+    .jumb {
+        text-align: center;
+        margin-top: 185px;
+        .welcome {
+            font-family: "Montserrat";
+            font-size: 72px;
+            font-weight: 700;
+            color: $white;
+            margin: 0;
+            letter-spacing: -1.2px;
+            line-height: 1;
+        }
+        .welcome2 {
+            @extend .welcome;
+            color: #b88b58;
+        }
+        .call {
+            font-family: "Montserrat";
+            font-size: 24px;
+            font-weight: 600;
+            color: $white;
+            margin: 0;
+            letter-spacing: -0.3px;
+            line-height: 2.3;
+        }
+        .btnjumb {
+            font-family: "Montserrat";
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 18px;
+            width: 194px;
+            margin-top: 32px;
+            height: 43px;
+            letter-spacing: -0.3px;
+            background-color: #b88b58;
+        }
+    }
+}
