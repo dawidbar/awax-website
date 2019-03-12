@@ -1,4 +1,5 @@
 $white: #fff;
+$font: "Montserrat", Helvetica;
 .navbar {
     height: 100px;
     margin-bottom: 0;
@@ -19,7 +20,7 @@ $white: #fff;
             a {
                 color: $white;
                 text-decoration: none;
-                font-family: "Montserrat";
+                font-family: $font;
                 font-weight: 700;
                 font-size: 14px;
                 letter-spacing: 0.23px;
@@ -40,7 +41,7 @@ $white: #fff;
         text-align: center;
         margin-top: 185px;
         .welcome {
-            font-family: "Montserrat";
+            font-family: $font;
             font-size: 72px;
             font-weight: 700;
             color: $white;
@@ -53,7 +54,7 @@ $white: #fff;
             color: #b88b58;
         }
         .call {
-            font-family: "Montserrat";
+            font-family: $font;
             font-size: 24px;
             font-weight: 600;
             color: $white;
@@ -62,7 +63,7 @@ $white: #fff;
             line-height: 2.3;
         }
         .btnjumb {
-            font-family: "Montserrat";
+            font-family: $font;
             font-size: 12px;
             font-weight: 700;
             border-radius: 18px;
@@ -86,7 +87,7 @@ $white: #fff;
 .about {
     margin-bottom: 60px;
     .title_about {
-        font-family: "Montserrat";
+        font-family: $font;
         font-weight: 700;
         font-size: 30px;
         margin-top: 25px;
@@ -103,7 +104,7 @@ $white: #fff;
     .text {
         margin-top: 40px;
         .text_about {
-            font-family: "Montserrat";
+            font-family: $font;
             font-weight: 400;
             font-size: 14px;
             text-align: left;
@@ -112,7 +113,7 @@ $white: #fff;
         }
     }
     .btn_about {
-        font-family: "Montserrat";
+        font-family: $font;
         font-size: 12px;
         font-weight: 700;
         border-radius: 18px;
@@ -132,7 +133,7 @@ $white: #fff;
 .services {
     background-color: black;
     .title_services {
-        font-family: "Montserrat";
+        font-family: $font;
         font-weight: 700;
         font-size: 30px;
         margin-top: 55px;
@@ -141,7 +142,7 @@ $white: #fff;
         color: $white;
     }
     .sub_title_services {
-    @extend .title_services;
+        @extend .title_services;
         margin: 0;
         font-size: 14px;
         color: #aeaeae;
@@ -155,7 +156,7 @@ $white: #fff;
         height: 199px;
         text-align: center;
         .serv_title {
-            font-family: "Montserrat";
+            font-family: $font;
             font-weight: 600;
             font-size: 18px;
             color: $white;
@@ -163,7 +164,7 @@ $white: #fff;
             margin-bottom: 0;
         }
         .serv_sub_title {
-            font-family: "Montserrat";
+            font-family: $font;
             font-weight: 300;
             font-size: 12px;
             color: $white;
@@ -179,5 +180,163 @@ $white: #fff;
     }
     .serv1 {
         border-right: 1.5px solid #383838;
+    }
+}
+.projects {
+    .title_projects {
+        font-family: $font;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 58px;
+        letter-spacing: -0.8px;
+        text-align: center;
+    }
+    .sub_title_projects {
+        @extend .title_projects;
+        margin: 0;
+        font-size: 14px;
+        color: #aeaeae;
+        font-weight: 600;
+    }
+    .gallery_nav {
+        display: block;
+        text-align: center;
+        margin-top: 49px;
+        margin-left: 217px;
+        .gallery_ul {
+            list-style: none;
+            background-color: #ededed;
+            padding: 18px;
+            border: 1px solid #cfcfcf;
+            border-radius: 21px;
+            max-width: 707px;
+            li {
+                display: inline;
+                font-family: $font;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 16px;
+                border-left: 1px solid #cfcfcf;
+                &:hover {
+                    border-bottom: 5px solid #b88b58;
+                }
+            }
+            .li1 {
+                border-left: none;
+            }
+        }
+    }
+    .gallery {
+        margin-top: 22px;
+        margin-left: 25px;
+        .img_gallery {
+            padding: 15px 5px;
+            &:hover {
+                visibility: visible;
+            }
+            .overlay {
+                background-color: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                width: 255px;
+                height: 165px;
+                text-align: center;
+                color: $white;
+                font-family: $font;
+                font-weight: 300;
+                font-size: 12px;
+                visibility: hidden;
+                cursor: pointer;
+                h2 {
+                    font-weight: 400;
+                    font-size: 18px;
+                    margin-top: 45px;
+                }
+            }
+        }
+    }
+    .btn_gallery {
+        font-family: $font;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 18px;
+        width: 194px;
+        margin-top: 28px;
+        height: 43px;
+        letter-spacing: -0.3px;
+        background-color: #b88b58;
+        border: 1px solid #b88b58;
+        margin: 17px auto;
+    }
+}
+.team {
+    background-image: url(../images/teambackground.png);
+    background-size: cover;
+    background-position: center 0;
+    margin-top: 39px;
+    .title_team {
+        font-family: $font;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 58px;
+        letter-spacing: -0.8px;
+        text-align: center;
+        color: $white;
+    }
+    .sub_title_team {
+        @extend .title_team;
+        margin: 0;
+        font-size: 14px;
+        color: #aeaeae;
+        font-weight: 600;
+    }
+    .memrow {
+        margin-top: 37px;
+        margin-left: 3px;
+        .member{
+        width: 350px;
+        height: 432px;
+        background-color: $white;
+        text-align: center;
+        margin: 0 14px;
+            img {
+                margin-top: 47px;
+            }
+            .tea_title {
+                font-family: $font;
+                font-weight: 600;
+                font-size: 21px;
+                margin-top: 43px;
+            }
+            .tea_sub_title {
+                font-family: $font;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+        .social {
+            display: inline-flex;
+            margin-right: 2px;
+            margin-top: 17px;
+            .main_social {
+                border-radius: 50%;
+                background-color: #bebebe;
+                width: 33px;
+                height: 33px;
+                margin: 3px;
+                &:hover {
+                    background-color: #b88b58;
+                }
+            }
+            i {
+                font-size: 1.3em;
+                margin-top: 8px;
+                color: $white;
+            }
+        }
+    }
+    .paginator {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 42px;
     }
 }

@@ -23,7 +23,7 @@
 .navbar .nav li a {
   color: #fff;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.23px;
@@ -47,7 +47,7 @@
 }
 
 .jumbotron .jumb .welcome, .jumbotron .jumb .welcome2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-size: 72px;
   font-weight: 700;
   color: #fff;
@@ -61,7 +61,7 @@
 }
 
 .jumbotron .jumb .call {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-size: 24px;
   font-weight: 600;
   color: #fff;
@@ -71,7 +71,7 @@
 }
 
 .jumbotron .jumb .btnjumb {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-size: 12px;
   font-weight: 700;
   border-radius: 18px;
@@ -98,7 +98,7 @@
 }
 
 .about .title_about, .about .sub_title {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-weight: 700;
   font-size: 30px;
   margin-top: 25px;
@@ -118,7 +118,7 @@
 }
 
 .about .text .text_about {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   font-size: 14px;
   text-align: left;
@@ -127,7 +127,7 @@
 }
 
 .about .btn_about {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-size: 12px;
   font-weight: 700;
   border-radius: 18px;
@@ -150,7 +150,7 @@
 }
 
 .services .title_services, .services .sub_title_services {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-weight: 700;
   font-size: 30px;
   margin-top: 55px;
@@ -176,7 +176,7 @@
 }
 
 .services .serv .serv_title {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-weight: 600;
   font-size: 18px;
   color: #fff;
@@ -185,7 +185,7 @@
 }
 
 .services .serv .serv_sub_title {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Helvetica;
   font-weight: 300;
   font-size: 12px;
   color: #fff;
@@ -203,5 +203,186 @@
 
 .services .serv1 {
   border-right: 1.5px solid #383838;
+}
+
+.projects .title_projects, .projects .sub_title_projects {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 58px;
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+
+.projects .sub_title_projects {
+  margin: 0;
+  font-size: 14px;
+  color: #aeaeae;
+  font-weight: 600;
+}
+
+.projects .gallery_nav {
+  display: block;
+  text-align: center;
+  margin-top: 49px;
+  margin-left: 217px;
+}
+
+.projects .gallery_nav .gallery_ul {
+  list-style: none;
+  background-color: #ededed;
+  padding: 18px;
+  border: 1px solid #cfcfcf;
+  border-radius: 21px;
+  max-width: 707px;
+}
+
+.projects .gallery_nav .gallery_ul li {
+  display: inline;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 16px;
+  border-left: 1px solid #cfcfcf;
+}
+
+.projects .gallery_nav .gallery_ul li:hover {
+  border-bottom: 5px solid #b88b58;
+}
+
+.projects .gallery_nav .gallery_ul .li1 {
+  border-left: none;
+}
+
+.projects .gallery {
+  margin-top: 22px;
+  margin-left: 25px;
+}
+
+.projects .gallery .img_gallery {
+  padding: 15px 5px;
+}
+
+.projects .gallery .img_gallery:hover {
+  visibility: visible;
+}
+
+.projects .gallery .img_gallery .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 255px;
+  height: 165px;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 300;
+  font-size: 12px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.projects .gallery .img_gallery .overlay h2 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 45px;
+}
+
+.projects .btn_gallery {
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 18px;
+  width: 194px;
+  margin-top: 28px;
+  height: 43px;
+  letter-spacing: -0.3px;
+  background-color: #b88b58;
+  border: 1px solid #b88b58;
+  margin: 17px auto;
+}
+
+.team {
+  background-image: url(../images/teambackground.png);
+  background-size: cover;
+  background-position: center 0;
+  margin-top: 39px;
+}
+
+.team .title_team, .team .sub_title_team {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 58px;
+  letter-spacing: -0.8px;
+  text-align: center;
+  color: #fff;
+}
+
+.team .sub_title_team {
+  margin: 0;
+  font-size: 14px;
+  color: #aeaeae;
+  font-weight: 600;
+}
+
+.team .memrow {
+  margin-top: 37px;
+  margin-left: 3px;
+}
+
+.team .memrow .member {
+  width: 350px;
+  height: 432px;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 14px;
+}
+
+.team .memrow .member img {
+  margin-top: 47px;
+}
+
+.team .memrow .member .tea_title {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 21px;
+  margin-top: 43px;
+}
+
+.team .memrow .member .tea_sub_title {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.team .memrow .social {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 2px;
+  margin-top: 17px;
+}
+
+.team .memrow .social .main_social {
+  border-radius: 50%;
+  background-color: #bebebe;
+  width: 33px;
+  height: 33px;
+  margin: 3px;
+}
+
+.team .memrow .social .main_social:hover {
+  background-color: #b88b58;
+}
+
+.team .memrow .social i {
+  font-size: 1.3em;
+  margin-top: 8px;
+  color: #fff;
+}
+
+.team .paginator {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 42px;
 }
 /*# sourceMappingURL=style.css.map */
