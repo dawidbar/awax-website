@@ -37,6 +37,7 @@ $font: "Montserrat", Helvetica;
     height: 752px;
     background-size: cover;
     background-position: center -100px;
+    margin-bottom: 0;
     .jumb {
         text-align: center;
         margin-top: 185px;
@@ -73,6 +74,10 @@ $font: "Montserrat", Helvetica;
             letter-spacing: -0.3px;
             background-color: #b88b58;
             border: 1px solid #b88b58;
+            &:hover {
+                background-color: #373737;
+                border: 1px solid #373737;
+            }
         }
         .pagi {
             margin-top: 188px;
@@ -85,7 +90,9 @@ $font: "Montserrat", Helvetica;
     }
 }
 .about {
-    margin-bottom: 60px;
+    background-color: #f7f7f7;
+    padding-bottom: 60px;
+    padding-top: 30px;
     .title_about {
         font-family: $font;
         font-weight: 700;
@@ -124,6 +131,10 @@ $font: "Montserrat", Helvetica;
         background-color: #b88b58;
         border: 1px solid #b88b58;
         margin-left: 15px;
+        &:hover {
+            background-color: #373737;
+            border: 1px solid #373737;
+        }
     }
     .video {
         padding: 0;
@@ -183,6 +194,8 @@ $font: "Montserrat", Helvetica;
     }
 }
 .projects {
+    background-color: #f7f7f7;
+    padding-bottom: 39px;
     .title_projects {
         font-family: $font;
         font-weight: 700;
@@ -266,13 +279,16 @@ $font: "Montserrat", Helvetica;
         background-color: #b88b58;
         border: 1px solid #b88b58;
         margin: 17px auto;
+        &:hover {
+            background-color: #373737;
+            border: 1px solid #373737;
+        }
     }
 }
 .team {
     background-image: url(../images/teambackground.png);
     background-size: cover;
     background-position: center 0;
-    margin-top: 39px;
     .title_team {
         font-family: $font;
         font-weight: 700;
@@ -334,9 +350,177 @@ $font: "Montserrat", Helvetica;
             }
         }
     }
-    .paginator {
+}
+.paginator {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 42px;
+}
+.clients {
+    background-color: #f7f7f7;
+    .title_clients {
+        font-family: $font;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 58px;
+        letter-spacing: -0.8px;
         text-align: center;
-        margin-top: 50px;
-        margin-bottom: 42px;
+    }
+    .sub_title_clients {
+        @extend .title_clients;
+        margin: 0;
+        font-size: 14px;
+        color: #aeaeae;
+        font-weight: 600;
+    }
+    .cli_title {
+        font-family: $font;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 26px;
+    }
+    .cli_sub_title {
+        font-family: $font;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+    .client_img {
+        text-align: center;
+        margin-top: 70px;
+    }
+    .quotes {
+        text-align: center;
+        margin-top: 22px;
+    }
+    .client_p {
+        font-family: $font;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center;
+        max-width: 700px;
+        margin: 20px auto 0;
+    }
+}
+.logos {
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: center;
+    box-shadow: 0px 5px 9px 2px rgba(0,0,0,0.37);
+    padding-bottom: 8px;
+    img {
+        padding: 44px;
+    }
+}
+.price {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 48px;
+    .title_price {
+        font-family: $font;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 58px;
+        letter-spacing: -0.8px;
+        text-align: center;
+    }
+    .sub_title_price {
+        @extend .title_price;
+        margin: 0;
+        font-size: 14px;
+        color: #aeaeae;
+        font-weight: 600;
+    }
+    .pro_row {
+        margin-left: 0;
+        margin-top: 16px;
+        .product{
+            width: 255px;
+            height: 343px;
+            background-color: $white;
+            text-align: center;
+            margin: 15px;
+            .pro_name {
+                font-family: $font;
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 0;
+                margin-top: 31px;
+
+            }
+            .pro_price {
+                font-family: $font;
+                font-weight: 700;
+                font-size: 30px;
+                margin-top: 12px;
+                margin-bottom: 0;
+            }
+            .month {
+                font-family: $font;
+                font-weight: 400;
+                font-size: 10px;
+                color: #aeaeae;
+            }
+            .features {
+                @extend .month;
+                color: black;
+                margin-top: 19px;
+            }
+            .btn_pro {
+                font-family: $font;
+                font-size: 12px;
+                font-weight: 700;
+                border-radius: 18px;
+                width: 131px;
+                margin-top: 28px;
+                height: 45px;
+                letter-spacing: -0.3px;
+                background-color: #373737;
+                border: 1px solid #373737;
+                margin: 17px auto;
+                &:hover {
+                    background-color:#b88b58;
+                    border: 1px solid #b88b58;
+                }
+            }
+        }
+    }
+}
+.premium {
+    .title_premium {
+        font-family: $font;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 58px;
+        letter-spacing: -0.8px;
+        text-align: center;
+    }
+    .sub_title_premium {
+        @extend .title_premium;
+        margin: 0;
+        font-size: 14px;
+        color: #aeaeae;
+        font-weight: 600;
+    }
+    .prem_row {
+        .box {
+            margin-top: 29px;
+            img {
+                margin-left: 15px;
+            }
+        }
+        .prem_title {
+            font-family: $font;
+            font-weight: 700;
+            font-size: 21px;
+            margin-top: 41px;
+        }
+        .prem_sub_title {
+            font-family: $font;
+            font-weight: 300;
+            font-size: 14px;
+            color: #aeaeae;
+        }
     }
 }

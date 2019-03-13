@@ -39,6 +39,7 @@
   height: 752px;
   background-size: cover;
   background-position: center -100px;
+  margin-bottom: 0;
 }
 
 .jumbotron .jumb {
@@ -83,6 +84,11 @@
   border: 1px solid #b88b58;
 }
 
+.jumbotron .jumb .btnjumb:hover {
+  background-color: #373737;
+  border: 1px solid #373737;
+}
+
 .jumbotron .jumb .pagi {
   margin-top: 188px;
 }
@@ -94,7 +100,9 @@
 }
 
 .about {
-  margin-bottom: 60px;
+  background-color: #f7f7f7;
+  padding-bottom: 60px;
+  padding-top: 30px;
 }
 
 .about .title_about, .about .sub_title {
@@ -138,6 +146,11 @@
   background-color: #b88b58;
   border: 1px solid #b88b58;
   margin-left: 15px;
+}
+
+.about .btn_about:hover {
+  background-color: #373737;
+  border: 1px solid #373737;
 }
 
 .about .video {
@@ -203,6 +216,11 @@
 
 .services .serv1 {
   border-right: 1.5px solid #383838;
+}
+
+.projects {
+  background-color: #f7f7f7;
+  padding-bottom: 39px;
 }
 
 .projects .title_projects, .projects .sub_title_projects {
@@ -301,11 +319,15 @@
   margin: 17px auto;
 }
 
+.projects .btn_gallery:hover {
+  background-color: #373737;
+  border: 1px solid #373737;
+}
+
 .team {
   background-image: url(../images/teambackground.png);
   background-size: cover;
   background-position: center 0;
-  margin-top: 39px;
 }
 
 .team .title_team, .team .sub_title_team {
@@ -380,9 +402,195 @@
   color: #fff;
 }
 
-.team .paginator {
+.paginator {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 42px;
+}
+
+.clients {
+  background-color: #f7f7f7;
+}
+
+.clients .title_clients, .clients .sub_title_clients {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 58px;
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+
+.clients .sub_title_clients {
+  margin: 0;
+  font-size: 14px;
+  color: #aeaeae;
+  font-weight: 600;
+}
+
+.clients .cli_title {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 26px;
+}
+
+.clients .cli_sub_title {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.clients .client_img {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.clients .quotes {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.clients .client_p {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto 0;
+}
+
+.logos {
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  text-align: center;
+  box-shadow: 0px 5px 9px 2px rgba(0, 0, 0, 0.37);
+  padding-bottom: 8px;
+}
+
+.logos img {
+  padding: 44px;
+}
+
+.price {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 48px;
+}
+
+.price .title_price, .price .sub_title_price {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 58px;
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+
+.price .sub_title_price {
+  margin: 0;
+  font-size: 14px;
+  color: #aeaeae;
+  font-weight: 600;
+}
+
+.price .pro_row {
+  margin-left: 0;
+  margin-top: 16px;
+}
+
+.price .pro_row .product {
+  width: 255px;
+  height: 343px;
+  background-color: #fff;
+  text-align: center;
+  margin: 15px;
+}
+
+.price .pro_row .product .pro_name {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 31px;
+}
+
+.price .pro_row .product .pro_price {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.price .pro_row .product .month, .price .pro_row .product .features {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  font-size: 10px;
+  color: #aeaeae;
+}
+
+.price .pro_row .product .features {
+  color: black;
+  margin-top: 19px;
+}
+
+.price .pro_row .product .btn_pro {
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 18px;
+  width: 131px;
+  margin-top: 28px;
+  height: 45px;
+  letter-spacing: -0.3px;
+  background-color: #373737;
+  border: 1px solid #373737;
+  margin: 17px auto;
+}
+
+.price .pro_row .product .btn_pro:hover {
+  background-color: #b88b58;
+  border: 1px solid #b88b58;
+}
+
+.premium .title_premium, .premium .sub_title_premium {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 58px;
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+
+.premium .sub_title_premium {
+  margin: 0;
+  font-size: 14px;
+  color: #aeaeae;
+  font-weight: 600;
+}
+
+.premium .prem_row .box {
+  margin-top: 29px;
+}
+
+.premium .prem_row .box img {
+  margin-left: 15px;
+}
+
+.premium .prem_row .prem_title {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 21px;
+  margin-top: 41px;
+}
+
+.premium .prem_row .prem_sub_title {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 300;
+  font-size: 14px;
+  color: #aeaeae;
 }
 /*# sourceMappingURL=style.css.map */
