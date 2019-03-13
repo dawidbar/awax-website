@@ -281,7 +281,7 @@
   padding: 15px 5px;
 }
 
-.projects .gallery .img_gallery:hover {
+.projects .gallery .img_gallery:hover .overlay {
   visibility: visible;
 }
 
@@ -384,7 +384,7 @@
   margin-top: 17px;
 }
 
-.team .memrow .social .main_social {
+.team .memrow .social .main_social, .team .memrow .social .social_icon .main_social2, .social_icon .team .memrow .social .main_social2, .team .memrow .social .social_icon .main_social3, .social_icon .team .memrow .social .main_social3, .team .memrow .social .social_icon .main_social4, .social_icon .team .memrow .social .main_social4, .team .memrow .social .social_icon .main_social5, .social_icon .team .memrow .social .main_social5 {
   border-radius: 50%;
   background-color: #bebebe;
   width: 33px;
@@ -392,7 +392,7 @@
   margin: 3px;
 }
 
-.team .memrow .social .main_social:hover {
+.team .memrow .social .main_social:hover, .team .memrow .social .social_icon .main_social2:hover, .social_icon .team .memrow .social .main_social2:hover, .team .memrow .social .social_icon .main_social3:hover, .social_icon .team .memrow .social .main_social3:hover, .team .memrow .social .social_icon .main_social4:hover, .social_icon .team .memrow .social .main_social4:hover, .team .memrow .social .social_icon .main_social5:hover, .social_icon .team .memrow .social .main_social5:hover {
   background-color: #b88b58;
 }
 
@@ -556,6 +556,10 @@
   border: 1px solid #b88b58;
 }
 
+.premium {
+  padding-bottom: 41px;
+}
+
 .premium .title_premium, .premium .sub_title_premium {
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
@@ -572,6 +576,11 @@
   font-weight: 600;
 }
 
+.premium .prem_row {
+  border-bottom: 1px solid #373737;
+  padding-bottom: 27px;
+}
+
 .premium .prem_row .box {
   margin-top: 29px;
 }
@@ -580,17 +589,207 @@
   margin-left: 15px;
 }
 
-.premium .prem_row .prem_title {
+.premium .prem_row .prem_title, .premium .prem_row .prem_title2, .premium .prem_row .prem_title3 {
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
   font-size: 21px;
-  margin-top: 41px;
+  margin-top: 71px;
 }
 
-.premium .prem_row .prem_sub_title {
+.premium .prem_row .prem_title:before, .premium .prem_row .prem_title2:before, .premium .prem_row .prem_title3:before {
+  content: "";
+  width: 36px;
+  height: 32px;
+  background-image: url(../images/icon-premium.png);
+  background-size: cover;
+  position: absolute;
+  left: -51px;
+}
+
+.premium .prem_row .prem_title2 {
+  margin-top: 32px;
+}
+
+.premium .prem_row .prem_title3 {
+  margin-top: 24px;
+}
+
+.premium .prem_row .prem_sub_title, .premium .prem_row .feature li {
   font-family: "Montserrat", Helvetica;
   font-weight: 300;
   font-size: 14px;
   color: #aeaeae;
+}
+
+.premium .prem_row .feature {
+  padding: 0;
+  line-height: 1.7;
+}
+
+.premium .prem_row .feature li {
+  list-style-type: none;
+}
+
+.premium .btn_prem {
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 18px;
+  width: 194px;
+  margin-top: 28px;
+  height: 43px;
+  letter-spacing: -0.3px;
+  background-color: #b88b58;
+  border: 1px solid #b88b58;
+  margin: 17px auto;
+}
+
+.premium .btn_prem:hover {
+  background-color: #373737;
+  border: 1px solid #373737;
+}
+
+.premium .paginator2 {
+  text-align: center;
+  margin-top: 33px;
+  margin-bottom: 42px;
+}
+
+.facts {
+  background-color: black;
+  padding-bottom: 27px;
+}
+
+.facts .title_facts, .facts .sub_title_facts {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 55px;
+  letter-spacing: -0.8px;
+  text-align: center;
+  color: #fff;
+}
+
+.facts .sub_title_facts {
+  margin: 0;
+  font-size: 14px;
+  color: #aeaeae;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.facts .fac {
+  margin-top: 27px;
+  margin-bottom: 41px;
+  height: 199px;
+  text-align: center;
+}
+
+.facts .fac .fac_main_title {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 48px;
+  color: #b88b58;
+}
+
+.facts .fac .fac_main_title:after {
+  content: "_";
+  color: #7e7e7e;
+  display: inline-block;
+  position: absolute;
+  top: 39px;
+  left: 131px;
+}
+
+.facts .fac .fac_title {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.facts .fac .fac_sub_title, .facts .fac .fac_sub_title2 {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  line-height: 19px;
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+
+.facts .fac .fac_sub_title2 {
+  margin-top: 35px;
+}
+
+.facts .fac .st1 {
+  margin-bottom: 12px;
+}
+
+.social_icon {
+  padding: 20px;
+  text-align: center;
+  margin-left: 78px;
+}
+
+.social_icon img {
+  margin-right: 10px;
+}
+
+.social_icon .main_social, .social_icon .main_social2, .social_icon .main_social3, .social_icon .main_social4, .social_icon .main_social5 {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: #34c5f0;
+  width: 33px;
+  height: 33px;
+  margin: 3px;
+  margin-right: 53px;
+}
+
+.social_icon .main_social:hover, .social_icon .main_social2:hover, .social_icon .main_social3:hover, .social_icon .main_social4:hover, .social_icon .main_social5:hover {
+  background-color: black;
+}
+
+.social_icon .main_social .after_i, .social_icon .main_social2 .after_i, .social_icon .main_social3 .after_i, .social_icon .main_social4 .after_i, .social_icon .main_social5 .after_i {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 10px;
+  color: #aeaeae;
+  margin-left: 14px;
+  margin-top: 9px;
+}
+
+.social_icon .main_social i, .social_icon .main_social2 i, .social_icon .main_social3 i, .social_icon .main_social4 i, .social_icon .main_social5 i {
+  font-size: 1.3em;
+  margin-top: 8px;
+  margin-left: 9px;
+  color: #fff;
+}
+
+.social_icon .main_social .fa-facebook, .social_icon .main_social2 .fa-facebook, .social_icon .main_social3 .fa-facebook, .social_icon .main_social4 .fa-facebook, .social_icon .main_social5 .fa-facebook {
+  margin-left: 11px;
+}
+
+.social_icon .main_social .fa-google-plus, .social_icon .main_social2 .fa-google-plus, .social_icon .main_social3 .fa-google-plus, .social_icon .main_social4 .fa-google-plus, .social_icon .main_social5 .fa-google-plus {
+  margin-left: 6px;
+}
+
+.social_icon .main_social2 {
+  background-color: #127cb4;
+}
+
+.social_icon .main_social3 {
+  background-color: #336297;
+}
+
+.social_icon .main_social4 {
+  background-color: #e74237;
+}
+
+.social_icon .main_social5 {
+  background-color: #b71c29;
 }
 /*# sourceMappingURL=style.css.map */
