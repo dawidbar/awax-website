@@ -56,7 +56,7 @@ $font: "Montserrat", Helvetica;
     background-image:url(../images/jumbotron.png);
     height: 752px;
     background-size: cover;
-    background-position: center -100px;
+    background-position: center;
     margin-bottom: 0;
     .jumb {
         text-align: center;
@@ -806,6 +806,118 @@ $font: "Montserrat", Helvetica;
             &:hover {
                 background-color: #373737;
                 border: 1px solid #373737;
+            }
+        }
+    }
+}
+@media (max-width: 1500px) {
+    .navbar {
+        .container-fluid{
+            margin-right: 5px;
+            margin-left: 44px;
+        }
+    }
+} 
+@media (max-width: 1199px){
+    .projects {
+        .gallery_nav {
+            margin-left: 127px;
+
+        }
+    }
+    .team {
+        .memrow {
+            .member {
+                width: 100%;
+                margin: 10px;
+            }
+        }
+    }
+    .price {
+        .pro_row {
+            .product {
+                width: calc(50% - 30px),
+            }
+        }
+    }
+    .footer {
+        .footer_text {
+            margin-top: 16px;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .navbar {
+        .nav li {
+            a {
+                letter-spacing: initial;
+                padding: 7px;
+                font-size: 13px;
+            }
+        }
+    }
+    .about{
+        .video {
+            width: 100%;
+            text-align: center;
+        }
+        .text {
+            width: 100%;
+            text-align: center;
+            .text_about {
+                text-align: center;
+            }
+        }
+    }
+    .projects {
+        .gallery {
+            margin-left: initial;
+            .img_gallery {
+                padding:0;
+            }
+        }
+    }
+}
+@media (max-width: 993px) {
+    .services{
+        .serv {
+            border: none;
+        }
+    }
+    .projects {
+        .gallery_nav {
+            margin-left: initial;
+        }
+        .gallery {
+            text-align: center;
+            .img_gallery {
+                padding: 15px 5px;
+                font-size: 20px;
+            }
+        }
+    }
+    .price {
+        .pro_row {
+            .product {
+                width: 100%;
+                margin: initial;
+                .pro_name {
+                    padding-top: 30px;
+                }
+                .features {
+                    font-size: 11px;
+                }
+            }
+        }
+        
+    }
+    .premium {
+        .prem_row {
+            text-align: center;
+        }
+        .prem_title {
+            &:before {
+                left: 220px;
             }
         }
     }
