@@ -931,15 +931,27 @@
   .projects .gallery_nav {
     margin-left: 127px;
   }
+  .row {
+    margin-top: initial;
+    margin-left: initial;
+    margin-right: initial;
+  }
+  .team .memrow {
+    margin-top: initial;
+    margin-right: initial;
+  }
   .team .memrow .member {
     width: 100%;
-    margin: 10px;
+    margin: 10px 0;
   }
   .price .pro_row .product {
     width: calc(50% - 30px);
   }
   .footer .footer_text {
     margin-top: 16px;
+  }
+  .facts .fac .fac_main_title:after {
+    left: 106px;
   }
 }
 
@@ -971,6 +983,12 @@
 @media (max-width: 993px) {
   .services .serv {
     border: none;
+    margin-top: 31px;
+    margin-bottom: 25px;
+  }
+  .services .serv .serv_sub_title {
+    margin-top: 10px;
+    font-size: 14px;
   }
   .projects .gallery_nav {
     margin-left: initial;
@@ -996,7 +1014,54 @@
     text-align: center;
   }
   .premium .prem_title:before, .premium .prem_row .prem_title2:before, .premium .prem_row .prem_title3:before {
-    left: 220px;
+    display: none;
+  }
+  .facts .fac .fac_main_title:after {
+    display: none;
+  }
+  .footer {
+    text-align: center;
+    height: initial;
+    padding-bottom: 30px;
+  }
+  .footer .footer_text {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .navbar-header {
+    float: initial;
+  }
+  .navbar {
+    text-align: center;
+    height: 110px;
+  }
+  .navbar .nav li {
+    margin-top: 0;
+  }
+  .navbar .nav li a {
+    font-size: 12px;
+  }
+  .navbar .container-fluid {
+    margin: 0;
+  }
+  .navbar-brand img {
+    display: initial;
+    padding: 10px;
+  }
+  .pull-right {
+    float: none !important;
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron .jumb .welcome, .jumbotron .jumb .welcome2 {
+    font-size: 3em;
+  }
+  .projects .gallery_nav .gallery_ul li {
+    padding: 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */
